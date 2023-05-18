@@ -1,0 +1,28 @@
+Early version of TOTK event flows data mine. CVS, too many records for excel.
+
+Fields: event_flow_name, event_name, actor_name, action_or_query, action_or_query_name, parameter_key, parameter_value, value_type
+
+Some event flows are not supported by the extraction tools I have currently. The ones I found to be this way were files ending with _PreRender.bfevfl.
+
+If there is interest for this, I'll look to mine unique datasets like:
+
+unique key/value combinations for parameters
+unique lists of actors
+unique list of events
+Actor+Actions
+Actor+Queries
+Anything else?
+
+Example:
+event_flow_name,event_name,actor_name,action_or_query,action_or_query_name,parameter_key,parameter_value,value_type
+Access_KorokForestColosseum,Event1,Npc_Assassin_Junior,Action,EventTalk,NotPlayLipSyncAnim,"0",Bool
+Access_KorokForestColosseum,Event1,Npc_Assassin_Junior,Action,EventTalk,IsCloseDialog,"1",Bool
+Access_KorokForestColosseum,Event1,Npc_Assassin_Junior,Action,EventTalk,ChoiceLabel3,"0",Int
+Access_KorokForestColosseum,Event1,Npc_Assassin_Junior,Action,EventTalk,ChoiceLabel4,"0",Int
+Access_KorokForestColosseum,Event1,Npc_Assassin_Junior,Action,EventTalk,IsAnimeDriven,"0",Bool
+Access_KorokForestColosseum,Event1,Npc_Assassin_Junior,Action,EventTalk,ChangeMstxtForActor,"0",Bool
+Access_KorokForestColosseum,Event1,Npc_Assassin_Junior,Action,EventTalk,IsOverrideStyle,"0",Bool
+Access_KorokForestColosseum,Event1,Npc_Assassin_Junior,Action,EventTalk,IsNotOpenIfSkipedMostRecent,"0",Bool
+Access_KorokForestColosseum,Event1,Npc_Assassin_Junior,Action,EventTalk,IsWaitEnd,"1",Bool
+Access_KorokForestColosseum,Event1,Npc_Assassin_Junior,Action,EventTalk,ChoiceDefaultNo,"0",Int
+Access_KorokForestColosseum,Event1,Npc_Assassin_Junior,Action,EventTalk,MessageId,"EventFlowMsg/Access_KorokForestColosseum:Talk_0001",String
